@@ -2,9 +2,9 @@
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
+* **Name**: DHARANI SREE P
+* **Register Number**: 212224040071
+* **Date of Submission**: 28.08.2026
 
 ---
 
@@ -77,36 +77,32 @@ Reboot the EC2 instance and verify that the data stored in the EBS volume is sti
 ---
 
 ## Workflow (Student Explanation)
-
-(Write the steps you followed in your own words)
-
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
-
----
+1.Explore Amazon EBS (Elastic Block Store) in the EC2 dashboard and understand different volume types such as General Purpose SSD (gp2/gp3), Provisioned IOPS SSD, and HDD-based volumes. These are used for persistent block-level storage.
+2.Create a new EBS volume by selecting the required size and type. Ensure the volume is created in the same Availability Zone as the EC2 instance for successful attachment.
+3.Attach the created EBS volume to the running EC2 instance as an additional block storage device. This makes the volume accessible to the instance.
+4.Connect to the EC2 instance using SSH, format the volume with a file system (e.g., ext4), and mount it to a directory such as /mnt/ebs or /data for usage.
+5.Store files in the mounted volume and verify persistence by rebooting the instance. The data remains intact, showing that EBS provides durable and persistent storage.
 
 ## Output Screenshots (Attach 3)
 
 ### Screenshot 1: EBS Volume Created
 
-(Insert Screenshot Here)
 
----
+<img width="1919" height="943" alt="image" src="https://github.com/user-attachments/assets/fad1f6dc-ad65-4ca3-b500-9fb8f3a50af5" />
+
+
 
 ### Screenshot 2: EBS Volume Attached to EC2
 
-(Insert Screenshot Here)
 
----
+<img width="1919" height="876" alt="image" src="https://github.com/user-attachments/assets/d6f48b6d-0a24-42f3-8e41-358bef1bc737" />
+
 
 ### Screenshot 3: Mounted Volume with Data
 
-(Insert Screenshot Here)
 
----
+<img width="1919" height="939" alt="image" src="https://github.com/user-attachments/assets/c8f3e789-462c-461b-81e2-a286d74c2e05" />
+
 
 ## Result / Conclusion
 
